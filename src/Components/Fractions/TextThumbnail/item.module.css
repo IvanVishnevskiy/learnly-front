@@ -1,0 +1,7 @@
+.main {
+  margin: 14px 0;
+  padding: 21px;
+  background-color: var(--red);
+  border-radius: 7px;
+  cursor: pointer;
+}

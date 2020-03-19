@@ -1,0 +1,22 @@
+.main {
+  max-width: var(--maxwidth);
+  margin: 7px auto;
+}
+
+.name {
+  padding: 14px 7px 14px 0;
+}
+
+.value {
+  color: var(--pink);
+  filter: brightness(2) contrast(.4);
+  /* background: linear-gradient(45deg, rgba(200, 30, 50, .1), rgba(0,0,0,.1)); */
+  padding: 0 14px;
+  max-width: 170px;
+  word-break: break-all;
+}
+
+.edit img {
+  height: 15px;
+  transform: translate(3px, -0px)
+}

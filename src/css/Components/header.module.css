@@ -1,0 +1,30 @@
+.main {
+  height: 75px;
+  width: 100%;
+  background-image: linear-gradient(45deg, var(--pink), var(--red));
+  color: #fff;
+  padding: 20px;
+  margin-bottom: 40px;
+}
+
+.main a {
+  color: #fff
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  max-width: var(--maxwidth);
+  margin: 0 auto;
+}
+
+.content a {
+  text-decoration: none;
+}
+
+.name {
+  user-select: none;
+  z-index: 1000;
+}

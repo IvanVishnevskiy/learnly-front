@@ -1,0 +1,5 @@
+.main {
+  max-width: calc(var(--maxwidth) + 40px);
+  margin: 0 auto;
+  padding: 0 20px;
+}

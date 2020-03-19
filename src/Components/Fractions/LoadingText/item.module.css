@@ -1,0 +1,5 @@
+.main {
+  color: var(--gray);
+  background: var(--gray);
+  user-select: none;
+}

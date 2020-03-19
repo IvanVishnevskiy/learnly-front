@@ -1,0 +1,44 @@
+.main {
+  position: absolute;
+  min-width: 200px;
+  top: -10px;
+  left: 50%;
+  transform: translate(-50%, 5px);
+  min-height: 200px;
+  background-color: #353535;
+  transition: all .1s ease;
+  opacity: 0;
+  pointer-events: none;
+  z-index: 0
+}
+
+.show {
+  transform: translateX(-50%);
+  opacity: 1;
+  pointer-events: all;
+}
+
+.contents {
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  padding-left: 0;
+}
+
+.contents li {
+  height: 40px;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  padding: 5px 14px;
+  cursor: pointer;
+}
+
+.contents li:hover {
+  background-color: #454545;
+}
+
+.contents li img {
+  height: 25px;
+  padding-right: 7px;
+}

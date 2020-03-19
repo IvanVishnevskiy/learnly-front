@@ -1,0 +1,53 @@
+.main {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: var(--mainshadow);
+  padding: 27px;
+  border-radius: 1px;
+  min-width: 400px;
+  min-height: 400px;
+  display: flex;
+  align-content: center;
+  justify-content: space-around;
+  background: #fffefe
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: auto;
+  min-width: 200px;
+}
+
+.formItem {
+  margin-bottom: 7px;
+  width: 100% !important;
+}
+
+.error {
+  color: red;
+  transition: opacity .13s ease-in-out;
+  margin-top: 14px
+}
+
+.registerLink {
+  color: gray;
+  margin-top: 7px;
+  font-size: 14px
+}
+
+.codeForm {
+  display: flex;
+  width: 225px;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+.codeForm input {
+  width: 40px;
+  min-width: 10px;  
+  text-align: center;
+}

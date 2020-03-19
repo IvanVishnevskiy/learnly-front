@@ -1,0 +1,7 @@
+.dictionaryList {
+  display: flex;
+  margin-top: 17px;
+}
+.dictionaryList > div {
+  margin-right: 35px;
+}

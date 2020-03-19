@@ -1,0 +1,23 @@
+.main {
+  background-color: var(--red);
+  position: relative;
+  cursor: pointer;
+}
+.translation {
+  position: absolute;
+  background-color: var(--redd2);
+  padding: 5px;
+  left: 50%;
+  bottom: calc(100% + 7px);
+  transform: translateX(-50%);
+  text-align: center;
+  opacity: 0;
+  border-radius: 3px;
+  transition: opacity .3s ease-in-out;
+  pointer-events: none;
+}
+
+.main:hover .translation {
+  opacity: 1;
+  transition: opacity .1s ease-in-out;
+}

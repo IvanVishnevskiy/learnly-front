@@ -1,0 +1,41 @@
+.main {
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+  transition: color .2s ease;
+  display: inline-block;
+}
+
+.main::before {
+  content: "";
+  position: absolute;
+  top: calc(100% + 5px);
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+  transition: transform .2s ease;
+  transform-origin: center bottom;
+  z-index: 0;
+}
+
+.main:hover::before {
+  transform: scale(1.1, 15);
+}
+
+.main:hover {
+  color: #000
+}
+
+.main img {
+  transition: filter .2s ease;
+}
+
+.main:hover img {
+  filter: invert(1)
+}
+
+.contents {
+  z-index: 1;
+  position: relative;
+}
