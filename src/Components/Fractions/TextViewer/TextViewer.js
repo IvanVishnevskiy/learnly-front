@@ -11,10 +11,19 @@ class TextThumbnail extends Component {
     let i = 0
     sortedWords.forEach(({ word, Перевод }) => {
       let re = new RegExp(word.replace(/(?<! )to/gi, '').trim().split(/ /g).join('(ing| it| that| this| me| the| a|) '), 'gi')
-      console.log(re)
       textToRenderFrom = textToRenderFrom.replace(re, item => {
-        comps.push(<WordWithTranslation key={`comp${i}`} word={item} translation={Перевод} />)
-        console.log(item)
+        let context = '';
+        [
+          { name: ' it ', tr: 'это' }, 
+          { name: ' this ', tr: 'это' }, 
+          { name: ' that ', tr: 'это' },
+          { name: ' me ', tr: 'меня' },
+          { name: ' they ', tr: 'их' },
+          { name: ' them ', tr: 'их' }
+        ].forEach(phrase => 
+          context = (context || item.includes(phrase.name)) ? ` (${phrase.tr})` : ''
+        )
+        comps.push(<WordWithTranslation key={`comp${i}`} word={item} translation={Перевод + context} />)
         return `~_|_comp${i++}~_|`
       })
     })
