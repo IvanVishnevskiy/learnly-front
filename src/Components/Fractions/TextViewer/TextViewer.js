@@ -21,7 +21,7 @@ class TextThumbnail extends Component {
           { name: ' they ', tr: 'их' },
           { name: ' them ', tr: 'их' }
         ].forEach(phrase => 
-          context = (context || item.includes(phrase.name)) ? ` (${phrase.tr})` : ''
+          context = context ? context : item.includes(phrase.name) ? ` (${phrase.tr})` : ''
         )
         comps.push(<WordWithTranslation key={`comp${i}`} word={item} translation={Перевод + context} />)
         return `~_|_comp${i++}~_|`
